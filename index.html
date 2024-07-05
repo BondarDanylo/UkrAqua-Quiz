@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UkrAqua</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Montserrat:wght@500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section class="quiz">
+        <div class="quiz_main quiz_active__main">
+            <div class="quiz_main__content">
+                <h2 class="quiz_main__title">
+                    Не знаєш як правильно обрати фільтр?
+                </h2>
+                <p class="quiz_main__text">
+                    Дай відповідь на декілька простих запитань та ми знайдемо для тебе найкращий фільтр
+                </p>
+                <button class="quiz__main__button">
+                    Розпочати
+                </button>
+            </div>
+            <div class="quiz_main__images">
+                <img src="images/filter1.png" alt="Filter" class="quiz_main__img quiz__first_filter">
+                <img src="images/filter2.png" alt="Filter" class="quiz_main__img quiz__second_filter">
+            </div>
+        </div>
+        <div class="quiz_questions">
+            <div class="quiz_wrapper">
+                <div class="quiz_question__header">
+                    <p class="quiz_questions__title">
+                        Майстер підбору фільтрів
+                    </p>
+                    <div class="progressbar">
+                        <img src="images/pipe-start.svg" alt="Pipe" class="pipe pipe_start">
+                        <img src="images/pipe-end.svg" alt="Pipe" class="pipe pipe_end">
+                        <img src="images/waterdrop.svg" alt="waterdrop" class="progressbar__drop">
+                        <img src="images/empty-glass.svg" alt="Glass" class="progressbar__glass">
+        
+                        <div class="progressbar_finished">
+                            <div class="progressbar__line"></div>
+                            <img src="images/drops.png" alt="BG" class="progressbar_waterdrops">
+                        </div>
+        
+                        <div class="progressbar__markers">
+                            <div class="progressbar__item">
+                                <img src="images/mark-current.svg" alt="Marker current" class="progressbar__mark" data-mark="1">
+                            </div>
+                            <div class="progressbar__item">
+                                <img src="images/mark-next.svg" alt="Marker next" class="progressbar__mark" data-mark="2">
+                            </div>
+                            <div class="progressbar__item">
+                                <img src="images/mark-next.svg" alt="Marker next" class="progressbar__mark" data-mark="3">
+                            </div>
+                            <div class="progressbar__item">
+                                <img src="images/mark-next.svg" alt="Marker next" class="progressbar__mark" data-mark="4">
+                            </div>
+                            <div class="progressbar__item">
+                                <img src="images/mark-next.svg" alt="Marker next" class="progressbar__mark" data-mark="5">
+                            </div>
+                            <div class="progressbar__item">
+                                <img src="images/mark-next.svg" alt="Marker next" class="progressbar__mark" data-mark="6">
+                            </div>
+                        </div>
+                        <div class="progressbar__section">
+                            <p class="progressbar__section_numer">1</p>
+                            <p class="progressbar__section_numer">2</p>
+                            <p class="progressbar__section_numer">3</p>
+                            <p class="progressbar__section_numer">4</p>
+                            <p class="progressbar__section_numer">5</p>
+                            <p class="progressbar__section_numer">6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz_question quiz_question_1" data-question="1">
+                    <h1 class="quiz_question__title">
+                        Де ви плануєте використовувати фільтр?
+                    </h1>
+                    <p class="quiz_question__text">
+                        Вкажіть місце, де буде використання фільтра
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1"  data-question="1">
+                            <img src="images/question-1/answer-1.svg" alt="Flat" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Квартира
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2"  data-question="1">
+                            <img src="images/question-1/answer-2.svg" alt="House" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Будинок
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="3"  data-question="1">
+                            <img src="images/question-1/answer-3.svg" alt="Office" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Офіс
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="4"  data-question="1">
+                            <img src="images/question-1/answer-4.svg" alt="Cafe" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Кафе/ресторан
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="5"  data-question="1">
+                            <img src="images/question-1/answer-5.svg" alt="Hospital" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Виробництво / Лікарня
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="6"  data-question="1">
+                            <img src="images/question-1/answer-6.svg" alt="Others" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Iнше
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question quiz_question_2" data-question="2">
+                    <h1 class="quiz_question__title">
+                        Вкажіть необхідний рівень очищення води
+                    </h1>
+                    <p class="quiz_question__text">
+                        Для чого ви будете використовувати воду
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1" data-select="drinking_1">
+                            <img src="images/question-2/answer-1.svg" alt="Bottle of Water" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Питна
+                            </p>
+                            <p class="quiz_answer__text">
+                                Повністю придатна для пиття вода
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2" data-select="domestic_1">
+                            <img src="images/question-2/answer-2.svg" alt="Tap" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Побутова
+                            </p>
+                            <p class="quiz_answer__text">
+                                Чиста вода для побутових потреб
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question quiz_question_3__drinking" data-question="3" data-select="drinking_1">
+                    <h1 class="quiz_question__title">
+                        Якого смаку воду бажаєте вживати?
+                    </h1>
+                    <p class="quiz_question__text">
+                        Оберіть смак води який вам довподоби
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1" data-select="drinking_2"> 
+                            <img src="images/question-3_drinking/answer-1.svg" alt="waterdrop" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Очищена
+                            </p>
+                            <p class="quiz_answer__text">
+                                Чиста вода без домішок
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2" data-select="drinking_2">
+                            <img src="images/question-3_drinking/answer-2.svg" alt="waterdrop" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                З незначною мінералізацією
+                            </p>
+                            <p class="quiz_answer__text">
+                                Вода з додаванням мiнералiв у процессi очищення
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="3" data-select="drinking_2">
+                            <img src="images/question-3_drinking/answer-3.svg" alt="waterdrop" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Смачна
+                            </p>
+                            <p class="quiz_answer__text">
+                                Вода з мiцною мінералізацією.
+                                <span>Дуже смачна.</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question quiz_question_3__domestic" data-question="3" data-select="domestic_1">
+                    <h1 class="quiz_question__title">
+                        Які проблеми з водою спостерігаєте?
+                    </h1>
+                    <p class="quiz_question__text">
+                        Оберить проблеми яки присутнi у водi
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1" data-select="domestic_2">
+                            <img src="images/question-3_domestic/answer-1.svg" alt="Yellow water" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Жовта вода
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2" data-select="domestic_2">
+                            <img src="images/question-3_domestic/answer-2.svg" alt="swoop" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Наліт
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="3" data-select="domestic_2">
+                            <img src="images/question-3_domestic/answer-3.svg" alt="limescale" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Накип
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="4" data-select="domestic_2">
+                            <img src="images/question-3_domestic/answer-4.svg" alt="smell" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Зайвий запах
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="5" data-select="domestic_2">
+                            <img src="images/question-3_domestic/answer-5.svg" alt="sand" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Песок або Iржа
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="6" data-select="domestic_2">
+                            <img src="images/question-3_domestic/answer-6.svg" alt="other" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Iнше
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question quiz_question_4__drinking" data-question="4" data-select="drinking_2">
+                    <h1 class="quiz_question__title">
+                        Який тиск води у вас у водопроводі?
+                    </h1>
+                    <p class="quiz_question__text">
+                        Оберить тиск води
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1" data-question="6">
+                            <img src="images/question-4_drinking/answer-1.svg" alt="barometer" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Слабкий (< 2.5 атм.)
+                            </p>
+                            <p class="quiz_answer__text">
+                                Вода тече.. (пояснення)
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2" data-question="6">
+                            <img src="images/question-4_drinking/answer-2.svg" alt="barometer" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Звичайний (+- 3 атм.)
+                            </p>
+                            <p class="quiz_answer__text">
+                                Це коли ...
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="3" data-question="6">
+                            <img src="images/question-4_drinking/answer-3.svg" alt="barometer" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Високий (>3 атм.)
+                            </p>
+                            <p class="quiz_answer__text">
+                                Це коли ...
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="4" data-question="6">
+                            <img src="images/question-4_drinking/answer-4.svg" alt="No sure" class="quiz_answers__img">
+                            <img src="images/question-4_drinking/answer-5.svg" alt="No sure" class="quiz_not_sure">
+                            <p class="quiz_answer__title">
+                                Не знаю
+                            </p>
+                            <p class="quiz_answer__text">
+                                Якщо не маете доступу до водопровiду
+                            </p>
+                            <div class="quiz_not_sure__text">
+                                Сервісний інженер привезе та встановить систему у вас. Гарантія на установку - 30 днів, на обладнання - в залежності від моделі. При умові сервісного обслуговування від Укр Аква гарантія буде продовжуватись до 5 років.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question quiz_question_4__domestic" data-question="4" data-select="domestic_2">
+                    <h1 class="quiz_question__title">
+                        Які проблеми з водою спостерігаєте?
+                    </h1>
+                    <p class="quiz_question__text">
+                        Оберить проблеми яки присутнi у водi
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1" data-question="6">
+                            <p class="quiz_answer__number">
+                                1
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2" data-question="6">
+                            <p class="quiz_answer__number">
+                                2
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="3" data-question="6">
+                            <p class="quiz_answer__number">
+                                3
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="4" data-question="6">
+                            <p class="quiz_answer__number">
+                                4+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question quiz_question_5" data-question="5">
+                    <h1 class="quiz_question__title">
+                        Який обсяг місця встановлення вам доступний?
+                    </h1>
+                    <p class="quiz_question__text">
+                        Оберить скільки місця відведено під установку з фільтрами
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1" data-question="7">
+                            <img src="images/question-5/answer-1.svg" alt="label size S" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Компактний
+                            </p>
+                            <p class="quiz_answer__text">
+                                Чим менший розмiр тим краще
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2" data-question="7">
+                            <img src="images/question-5/answer-2.svg" alt="label size L" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Стандартний
+                            </p>
+                            <p class="quiz_answer__text">
+                                10-15 литрiв
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="3" data-question="7">
+                            <img src="images/question-5/answer-3.svg" alt="label size XXL" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Стандартний
+                            </p>
+                            <p class="quiz_answer__text">
+                                10-15 литрiв
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question quiz_question_6" data-question="6">
+                    <h1 class="quiz_question__title">
+                        Який бюджет плануєте витратити?
+                    </h1>
+                    <p class="quiz_question__text">
+                        Вкажіть обмеження щодо бюджету 
+                    </p>
+                    <ul class="quiz_answers">
+                        <li class="quiz_answers__item" data-answer="1" data-question="8">
+                            <img src="images/question-6/answer-1.svg" alt="coin" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Базовий
+                            </p>
+                            <p class="quiz_answer__text">
+                                Чим менший, тим краще
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="2" data-question="8">
+                            <img src="images/question-6/answer-2.svg" alt="coin" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Оптимальний
+                            </p>
+                            <p class="quiz_answer__text">
+                                Оптимальний
+                            </p>
+                        </li>
+                        <li class="quiz_answers__item" data-answer="3" data-question="8">
+                            <img src="images/question-6/answer-3.svg" alt="coin" class="quiz_answers__img">
+                            <p class="quiz_answer__title">
+                                Покращений
+                            </p>
+                            <p class="quiz_answer__text">
+                                Кращi бренди та матерiали
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz_question__end">
+                    <h1 class="quiz_question__title">
+                        Результат підбору
+                    </h1>
+                    <p class="quiz_question__text">
+                        Кращi варианти фiльтрiв для вас
+                    </p>
+                    <form action="POST" class="quiz_form">
+                        <div class="quiz_form__text">
+                            <h3 class="quiz_form__title">
+                                Отримати пропозицiю
+                            </h3>
+                            <p class="quiz_form__subtitle">
+                                Ми підберемо для вас те, що підходить саме вам
+                            </p>
+                        </div>
+                        <div class="quiz_form__phone">
+                            <label for="quiz_form__phone" class="quiz_form__label">
+                                Ваш номер телефону
+                            </label>
+                            <input type="tel" placeholder="+38 ( __ ) __ __ " id="quiz_form__phone" name="quiz_form__phone" class="quiz_form__input">
+                        </div>
+                        <input type="submit" class="quiz_form__submit" value="ОТРИМАТИ">
+                    </form>
+                </div>
+                <div class="quiz_buttons">
+                    <button class="quiz_previous">
+                        <img src="images/arrow.svg" alt="Arrow" class="quiz_previous__arrow">
+                        <p class="quiz_previous__text">Назад</p>
+                    </button>
+                    <button class="quiz_home">Повернутись в магазин</button>
+                </div>
+            </div>
+        </div>
+        <div class="quiz_inputs">
+            <input type="text" id="input_quiestion_1" class="quiz_input">
+            <input type="text" id="input_quiestion_2" class="quiz_input">
+            <input type="text" id="input_quiestion_3" class="quiz_input">
+            <input type="text" id="input_quiestion_4" class="quiz_input">
+            <input type="text" id="input_quiestion_5" class="quiz_input">
+            <input type="text" id="input_quiestion_6" class="quiz_input">
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+$gradient: linear-gradient(180deg, #0D5A81 0%, #053852 100%);
+$gradient_questions: linear-gradient(238.84deg, #0D5A81 27.89%, #053852 90.81%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+$gradient_progressbar: linear-gradient(90deg, #A504BF 0%, #6D04BF 100%);
+
+
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+$blue: rgba(38, 157, 214, 1);
+
+$form_blue: rgba(220, 240, 249, 1);
+$form_grey: rgba(162, 162, 162, 1);
+$form_green: rgba(96, 158, 86, 1);
+
+$home_btn_blue: rgba(40, 152, 205, 0.4);
+
+$answer_color: rgba(233, 247, 251, 1);
+
+$quiz_section_radius: 10px;
+$border: rgba(5, 56, 82, 1);
+$line_height: 48px;
+$transition: all ease 0.2s;
+
+$btn_green: rgba(110, 201, 57, 1);
+$btn_blue: rgba(82, 179, 225, 1);
+
+%btn_hover {
+    background: linear-gradient(180deg, #ADEBFF 0%, #7FE0FF 167.08%);
+    box-shadow: 0px 0px 21px 9px rgba(36, 196, 246, 0.25);
+}
+%btn_selected {
+    background: rgba(195, 240, 254, 1) !important;
+    box-shadow: 0px 0px 19px 4px rgba(19, 170, 218, 0.32) inset !important;
+}
+
+%answer_large {
+    width: 250px;
+}
+
+@media screen and (max-width: 1400px) {
+    %answer {
+        font-size: 14px;
+        min-width: unset;
+    }
+    %answer_small {
+        width: 165px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    %answer_large {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 992px) {
+    %answer {
+        max-width: unset;
+        min-width: unset;
+    }
+}
+@media screen and (max-width: 768px) {
+    %answer {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 575px) {
+    %answer {
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    %answer_large {
+        width: 230px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    %answer_small {
+        height: 91px;
+        width: 165px;
+    }
+    %answer_medium {
+        height: 120px;
+    }
+}
+@media screen and (max-width: 425px) {
+    %answer_large {
+        width: 340px;
+        height: 102px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    %answer_small {
+        width: 150px;
+    }
+    %answer_large {
+        width: 310px;
+    }
+}
